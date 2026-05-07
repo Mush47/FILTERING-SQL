@@ -168,8 +168,8 @@ FROM (
     FROM dogs
     ORDER BY age DESC
     LIMIT 4
-)
-ORDER BY breed DESC;
+) AS subquery
+ORDER BY breed ASC;
 """, conn2)
 
 
